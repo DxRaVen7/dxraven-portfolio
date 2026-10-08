@@ -34,30 +34,35 @@ export type TimelineItem = {
 };
 
 export const profile = {
-  name: "YOUR NAME",
-  role: "IT Student · Web Developer",
+  name: "Hussein Aziz Ali",
+  role: "Information Technology Student · Web Developer",
   eyebrow: "INFORMATION TECHNOLOGY",
   shortBio:
-    "An Information Technology student focused on building clean, modern and useful digital experiences.",
+    "An Information Technology student focused on building practical digital solutions across web development, databases, APIs and software engineering.",
   heroBio:
-    "I build modern web experiences, database-driven applications, and practical software projects while growing toward full-stack development.",
-  location: "Iraq",
-  email: "your.email@example.com",
-  phone: "+964 7XX XXX XXXX",
-  github: "https://github.com/yourusername",
-  linkedin: "https://www.linkedin.com/in/yourusername",
-  instagram: "https://instagram.com/yourusername",
+    "I build practical web experiences and software projects while exploring databases, APIs, cybersecurity, and modern development tools.",
+  location: "Karbala, Iraq",
+  email: "hussein.albdeiri3@gmail.com",
+  phone: "+964 783 784 2856",
+  github: "https://github.com/DxRaVen7",
+  linkedin: "https://www.linkedin.com/in/raven-1aa066442/",
+  instagram: "https://www.instagram.com/qwaz.7/",
   cvUrl: "#",
-  image: "/images/profile-placeholder.svg",
+ image: "/images/profile (3).jpg",
   available: true,
-  rotatingRoles: ["Web Development", "Database Systems", "C# & .NET", "Problem Solving"],
+  rotatingRoles: [
+    "Web Development",
+    "Database Systems",
+    "C# & .NET",
+    "Cybersecurity",
+  ],
 };
 
 export const stats = [
-  { value: "03+", label: "Years Learning IT" },
-  { value: "10+", label: "Projects & Assignments" },
-  { value: "05+", label: "Core Technologies" },
-  { value: "100%", label: "Curiosity to Learn" },
+  { value: "3rd", label: "Year IT Student" },
+  { value: "04+", label: "Technical Projects" },
+  { value: "08+", label: "Core Technologies" },
+  { value: "04", label: "Professional Certificates" },
 ];
 
 export const skills: Record<string, Skill[]> = {
@@ -68,149 +73,151 @@ export const skills: Record<string, Skill[]> = {
     { name: "React", level: 75, icon: "R" },
     { name: "Next.js", level: 70, icon: "N" },
   ],
+
   Backend: [
     { name: "C#", level: 65, icon: "C#" },
     { name: ".NET", level: 60, icon: ".N" },
+    { name: "PHP", level: 70, icon: "PHP" },
+    { name: "Laravel", level: 70, icon: "L" },
     { name: "REST APIs", level: 65, icon: "API" },
-    { name: "Problem Solving", level: 82, icon: "PS" },
   ],
+
   Database: [
     { name: "MySQL", level: 80, icon: "SQL" },
-    { name: "SQL", level: 80, icon: "SQL" },
+    { name: "SQL", level: 85, icon: "SQL" },
     { name: "Database Design", level: 78, icon: "DB" },
     { name: "phpMyAdmin", level: 75, icon: "PM" },
   ],
 };
-
 export const projects: Project[] = [
   {
     id: "project-01",
-    title: "Campus Service Database",
-    category: "Database",
+    title: "Integrated Blood Bank System",
+    category: "Software & Database",
     year: "2026",
     description:
-      "A relational database concept for managing records, users, services, and operational data.",
+      "An integrated blood bank system designed to manage donor records, blood data, and operational workflows.",
     fullDescription:
-      "Designed as an academic project to demonstrate database analysis, relational modeling, SQL queries, and practical data management. Replace this description with your real project story.",
-    technologies: ["MySQL", "SQL", "phpMyAdmin"],
-    features: [
-      "Relational database design",
-      "Primary & foreign keys",
-      "CRUD operations",
-      "Practical SQL queries",
+      "An academic software project focused on building an integrated blood bank management system. The project combines database design, relational data management, RESTful API development, and practical troubleshooting to support structured and reliable handling of donor and blood bank information.",
+    technologies: [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "SQL",
+      "REST APIs",
     ],
-    github: "https://github.com/yourusername/campus-service-database",
+    features: [
+      "Donor records management",
+      "Relational database design",
+      "Multi-table relationships",
+      "RESTful API integration",
+      "Practical system troubleshooting",
+    ],
   },
+
   {
     id: "project-02",
     title: "Interactive Web Portfolio",
-    category: "Web",
+    category: "Web Development",
     year: "2026",
     description:
-      "A dynamic portfolio built with Next.js, TypeScript and Motion with a data-driven architecture.",
+      "A personal portfolio built with modern web technologies to showcase projects, technical skills, education, and achievements.",
     fullDescription:
-      "This portfolio itself is a project: component-based UI, reusable data structures, responsive layout, interactive project details and smooth animations.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+      "A responsive personal portfolio developed with Next.js and TypeScript. The project uses a data-driven structure to organize profile information, technical skills, projects, education, certificates, and contact links while providing an interactive and modern user experience.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Motion",
+    ],
     features: [
       "Responsive design",
       "Data-driven content",
-      "Animated sections",
-      "Interactive project modal",
+      "Interactive sections",
+      "Animated user interface",
+      "Project showcase",
     ],
-    github: "https://github.com/yourusername/portfolio",
+    github: "https://github.com/DxRaVen7/dxraven-portfolio",
     demo: "#",
   },
+
   {
     id: "project-03",
-    title: "Task Management App",
-    category: "Web",
+    title: "Security Research & Vulnerability Analysis",
+    category: "Cybersecurity",
     year: "2026",
     description:
-      "A clean task workflow concept for organizing work, priorities and completion states.",
+      "Independent security research focused on identifying potential risks in local systems and analyzing unauthorized access scenarios.",
     fullDescription:
-      "Replace this card with one of your actual projects. The structure is already ready for screenshots, live demos and GitHub links.",
-    technologies: ["React", "JavaScript", "CSS"],
-    features: ["Create tasks", "Status tracking", "Priority filters", "Responsive UI"],
-    github: "https://github.com/yourusername/task-manager",
-  },
-  {
-    id: "project-04",
-    title: "C# Console Management System",
-    category: "C#",
-    year: "2026",
-    description:
-      "A C# project for practicing object-oriented programming, collections and application logic.",
-    fullDescription:
-      "Use this project slot for your future C# / .NET work. It is intentionally included so the portfolio grows with your career direction.",
-    technologies: ["C#", ".NET", "OOP"],
-    features: ["OOP concepts", "Input validation", "Business logic", "Structured code"],
-    github: "https://github.com/yourusername/csharp-management",
+      "An independent security research project involving analysis of local systems and investigation of security weaknesses. The research examined NFC data retention in local ATM environments and highlighted potential risks related to unauthorized access and sensitive data exposure.",
+    technologies: [
+      "Cybersecurity",
+      "Security Research",
+      "NFC",
+      "ATM Systems",
+    ],
+    features: [
+      "Security analysis",
+      "Vulnerability identification",
+      "Risk assessment",
+      "Unauthorized access analysis",
+      "Independent technical research",
+    ],
   },
 ];
-
 export const education: TimelineItem[] = [
   {
     year: "2024 → Present",
-    title: "Bachelor’s in Information Technology",
-    place: "University / College Name",
+    title: "Bachelor's in Information Technology",
+    place: "Warith Al-Anbiyaa University — Karbala",
     description:
-      "Add your university, department, expected graduation date, and the most relevant subjects you study.",
-  },
-  {
-    year: "2026",
-    title: "Database & Web Development Focus",
-    place: "Academic Projects",
-    description:
-      "Worked with database design, SQL, web development concepts, and practical software projects.",
-  },
-  {
-    year: "2026",
-    title: "C# & .NET Learning Path",
-    place: "Self Learning",
-    description:
-      "Building backend and full-stack foundations with C#, .NET and modern web development.",
+      "Third-year Information Technology student with a focus on software development, databases, web technologies, and cybersecurity.",
   },
 ];
-
 export const certificates: Certificate[] = [
   {
-    title: "Certificate Name",
-    issuer: "Platform / Institution",
-    date: "2026",
+    title: "Web Application Development",
+    issuer: "Warith Al-Anbiyaa University",
+    date: "July 12, 2025",
   },
   {
-    title: "Another Certificate",
-    issuer: "Platform / Institution",
-    date: "2026",
+    title: "Linux Operating System",
+    issuer: "Warith Al-Anbiyaa University",
+    date: "July 4, 2026",
   },
   {
-    title: "Add Your Next Certificate",
-    issuer: "Platform / Institution",
-    date: "2026",
+    title: "Data Science",
+    issuer: "Warith Al-Anbiyaa University",
+    date: "July 11, 2026",
+  },
+  {
+    title: "Advanced Machine Learning",
+    issuer: "Warith Al-Anbiyaa University",
+    date: "July 20, 2026",
   },
 ];
-
 export const blogPosts = [
   {
     tag: "LEARNING",
-    title: "What I’m learning as an IT student",
+    title: "My Journey as an Information Technology Student",
     excerpt:
-      "Notes about web development, databases, programming and the path from university projects to real-world software.",
-    date: "Oct 2026",
+      "Exploring software development, databases, web technologies, and cybersecurity while building practical projects and expanding my technical skills.",
+    date: "2026",
   },
   {
     tag: "DATABASE",
-    title: "How I approach database projects",
+    title: "Building Better Database Projects",
     excerpt:
-      "A simple way to turn a real establishment or workflow into tables, relationships and useful queries.",
-    date: "Oct 2026",
+      "A practical look at how database design, SQL, relationships, and structured data can turn a real-world idea into a working system.",
+    date: "2026",
   },
   {
-    tag: "WEB",
-    title: "Why I like building interactive interfaces",
+    tag: "CYBERSECURITY",
+    title: "Learning Through Security Research",
     excerpt:
-      "Small details like motion, spacing and responsiveness can make a project feel much more professional.",
-    date: "Oct 2026",
+      "How independent security research helps me understand systems more deeply and think about software from a security perspective.",
+    date: "2026",
   },
 ];
 
