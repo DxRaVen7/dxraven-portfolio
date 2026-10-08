@@ -34,7 +34,7 @@ import {
   skills,
   stats,
   type Project,
-} from "@/data/portfolio";
+} from "../data/portfolio";
 
 const pageEase = [0.16, 1, 0.3, 1] as const;
 
@@ -103,12 +103,11 @@ function ProfilePhoto() {
       <div className="absolute inset-3 overflow-hidden rounded-[30px]">
         {!failed && profile.image ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={profile.image}
-            alt={`${profile.name} profile`}
-            className="h-full w-full object-cover object-center"
-            onError={() => setFailed(true)}
-          />
+         <img
+  src="/images/profile.jpg?v=2"
+  alt="Hussein Aziz Ali profile"
+  className="h-full w-full object-cover object-center"
+/>
         ) : (
           <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_50%_35%,rgba(167,139,250,0.35),transparent_35%),linear-gradient(145deg,#11162c,#080b18)]">
             <div className="text-center">
