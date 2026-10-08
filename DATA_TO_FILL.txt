@@ -1,0 +1,63 @@
+PERSONAL DATA TO REPLACE IN data/portfolio.ts
+==============================================
+
+1) profile
+- name
+- role
+- eyebrow
+- shortBio
+- heroBio
+- location
+- email
+- phone
+- github
+- linkedin
+- instagram
+- cvUrl
+- image
+- available
+- rotatingRoles
+
+2) stats
+Replace the 4 numbers/labels with real information only.
+
+3) skills
+Update the technology names and levels. Keep levels honest.
+
+4) projects
+For each project you can edit:
+- title
+- category
+- year
+- description
+- fullDescription
+- technologies
+- features
+- image (example: /images/projects/project-1.jpg)
+- github
+- demo
+
+5) education
+Edit your university, department, dates, and learning milestones.
+
+6) certificates
+Edit title, issuer, date, optional image and verification link.
+
+7) blogPosts
+Use this for technical notes or remove items you don't need.
+
+FILES FOR IMAGES
+================
+Profile image:
+/public/images/profile.jpg
+
+Project images:
+/public/images/projects/
+
+Certificate images:
+/public/images/certificates/
+
+CV:
+/public/cv.pdf
+
+After adding the real files, update their paths in data/portfolio.ts.
